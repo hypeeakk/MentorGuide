@@ -1,0 +1,61 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="hero text-center">
+    <h1 class="animated bounceInDown">
+        Find Your Mentor Here
+    </h1>
+    <p class="animated bounceInUp">
+        Let MentorGuide Do The Rest
+    </p><br /><br /><br />
+    <button>@Html.ActionLink("FindMentor", "Index", "Mentor")</button>
+</div>
+<div class="content">
+    <div class="about container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h1>
+                    Say Hello
+                </h1>
+                <p style="font-size: 20px">
+                    Users can use MentorGuide in finding mentors. This website is intentionally created for the students.
+                    Users can find the mentors, view their profile with detail information. And in the final stage, they can
+                    do booking to the mentors. 
+                </p>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <h1 class="text-center">How it works</h1>
+            <div class="col-md-4">
+                <div class="abcos0 text-center">
+                    <img src="~/Content/images/find.png" />
+                    <h2>Find Mentors</h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="abcos0 text-center">
+                    <img src="~/Content/images/profile.jpg" />
+                    <h2>View Profile</h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="abcos0 text-center">
+                    <img src="~/Content/images/booking.png" />
+                    <h2>Do Booking</h2>
+                </div>
+            </div>
+        </div>
+        
+    </div><br /><br />
+    <div class="row text-center">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+
+            <iframe width="860" height="415" src="https://www.youtube.com/embed/G2IFTNXJrnI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>

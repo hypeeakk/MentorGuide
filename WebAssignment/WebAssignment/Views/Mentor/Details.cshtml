@@ -1,0 +1,127 @@
+﻿@model WebAssignment.Models.Mentor
+
+@{
+    ViewBag.Title = "Details";
+    var image = "/Content/images/" + @Model.name + ".jpg";
+    var latitude = @Model.latitude;
+    var longitude = @Model.longtitude;
+}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+      integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+      crossorigin="" />
+<style>
+    img{
+        max-height: 600px;
+    }
+    #map {
+        height: 400px;
+        width: 800px;
+    }
+</style>
+<div class="content0">
+    <h2 class="text-center" style="font-family: 'Merriweather',serif; font-weight: 700; font-size: 30px;">Details</h2>
+
+    <div>
+        
+        <hr />
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">  
+                    <div class="image">
+                        <img src="@image" alt="@Model.name" class="img img-responsive" />
+                    </div>                
+                        <h2>@Model.name</h2>
+                        <h4>Subjects - @Model.subjects</h4>
+                        
+                        <h5>Phone Number - @Model.phone</h5>                       
+                        <h5>Address- @Model.address</h5> 
+                        <h4 class="text-center">Map</h4>
+                    <div id="map"></div><br /><br />
+                    
+                    <button>@Html.ActionLink("Booking", "Create", "Booking",  new { mentorname = Model.name, mentoraddr = Model.address, @class="btn btn-success" }, null)</button>
+                    
+
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+           
+        </div>
+        @*<dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.subjects)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.subjects)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.address)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.address)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.phone)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.phone)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.latitude)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.latitude)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.longtitude)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.longtitude)
+            </dd>
+        </dl>*@
+        @*<button>@Html.ActionLink("Booking", "Create", "Booking", new { mentorname = Model.name, mentoraddr = Model.address }, null)</button>*@
+
+    </div>
+    @*<p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>*@
+</div>
+<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+        integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+        crossorigin=""></script>
+<script>
+
+    var ny= [@latitude, @longitude]
+    // création de la map
+    var map = L.map('map').setView(ny, 12);
+
+    // création du calque images
+    L.tileLayer('https://maps.heigit.org/openmapsurfer/tiles/roads/webmercator/{z}/{x}/{y}.png', {
+        maxZoom: 20
+    }).addTo(map);
+
+    // ajout d'un markeur
+    var marker = L.marker(ny).addTo(map);
+
+    // ajout d'un popup
+    //marker.bindPopup('<h3> South Dagon, Myanmar. </h3>');
+</script>
+

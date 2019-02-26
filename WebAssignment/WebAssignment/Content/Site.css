@@ -1,0 +1,368 @@
+﻿body {
+    padding: 0px;
+}
+
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.nav {
+	background-color: #222222;
+	padding: 20px 0px;
+}
+.logo {
+	padding: 50px 20px 20px 20px;
+}
+.logo a {
+	font-family: 'Hammersmith One', sans-serif;
+	font-size: 30px;
+	color: white;
+}
+.logo a:hover {
+	color: #bfba55;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+.links{
+	padding: 30px 5px;
+}
+.links li a {
+	color: white;
+	padding: 10px 5px;
+	font-family: 'Hammersmith One', sans-serif;
+	font-size: 18px;
+}
+.links li a:hover {
+	text-decoration: none;
+	transition: 0.5s ease;
+	color: #bfba55;
+}
+
+.hero {
+    background: url('images/7.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: cover;
+	padding: 250px 0;
+}
+.hero2 {
+	background: url('images/9.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	padding: 200px 0;
+}
+.hero3 {
+	background: url('images/contact-bg1.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	padding: 160px 0;
+}
+.hero4 {
+	background: url('images/11..jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	padding: 200px 0;
+}
+.hero h1{
+	color: white;
+	font-family: 'Merriweather', serif;
+	font-size: 62px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+}
+.hero2 h1{
+	color: white;
+	font-family: 'Merriweather', serif;
+	font-size: 62px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+}
+.hero3 h1{
+    color: white;
+    font-family: 'Merriweather', serif;
+    font-size: 62px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.hero4 h1{
+	color: white;
+	font-family: 'Merriweather', serif;
+	font-size: 62px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+}
+.hero button{
+	border-radius: 100px;
+	padding: 12px 25px;
+	font-family: 'Merriweather', serif;
+	background: white;
+	font-size: 12px;
+	text-transform: uppercase;
+	border: none;
+	letter-spacing: 1px;
+	color: black;
+    font-weight: 700;
+}
+.hero button:hover{
+	background: transparent;
+	border: 1px solid white;
+	color: white;
+	transition: 0.5s;
+}
+.hero p{
+	color: #bfba55;
+    font-size: 40px;
+	font-family: 'Merriweather', serif;
+}
+.content0 {
+	padding: 30px 100px;
+	margin-top: 0px;
+	border: 0;
+	display: block;
+	min-height: 1000px;
+}
+.content0 h1{
+    font-family: 'Merriweather',serif;
+	font-weight: 700;
+	font-size: 30px;
+}
+.content {
+	padding: 30px 100px;
+	margin-top: 0px;
+	border: 0;
+	display: block;
+	min-height: 600px;
+}
+.contentb{
+    padding: 30px 100px;
+    margin-top: 0px;
+    border: 0;
+    display: block;
+    min-height: 600px;
+}
+.content h1{
+    font-family: 'Merriweather',serif;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.contact{
+    padding: 50px 100px;
+    margin-top: 0px;
+    border: 0;
+    display: block;
+    min-height: 250px;
+}
+.contact h1{
+	font-family: 'Merriweather',serif;
+	font-weight: 700;
+	font-size: 30px;
+}
+.footer{
+	height: 500px;
+	background: #222222;
+	padding: 150px;
+}
+.footer h3{
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+	color: white;
+	font-size: 26px;
+	letter-spacing: 0.5px;
+	margin: 0;
+}
+.footer p{
+	color: #777;
+	font-size: 15px;
+	font-family: 'Merriweather', serif;
+}
+.footer hr{
+	width: 1200px;
+	border-color: grey;
+}
+span{
+	color: white;
+	padding: 10px 20px;
+	border-radius: 1.5px;
+}
+span:hover{
+	background:white;
+	color: black;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 3px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #386fba;
+  color: white;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #022c66;
+}
+.tbox a:last-child{
+	float: right;
+}
+
+
+.about img{
+	border-radius: 50%;
+	height: 150px;
+    padding-top: 20px;
+}
+.abcos0{
+    border: 1px;
+	border-color: black;
+	height: 300px;
+	box-shadow: 0 8px 17px 0;
+	border-radius: 2px;
+}
+.abcos {
+	border: 1px;
+	border-color: black;
+	height: 400px;
+	box-shadow: 0 8px 17px 0;
+	border-radius: 2px;
+}
+.abcosb{
+    padding: 60px 0px 0px 60px;
+    border: 1px;
+    border-color: black;
+    height: 700px;
+    box-shadow: 0px 8px 17px 0px;
+    border-radius: 2px;
+}
+.abcos h1{
+	padding: 10px;
+}
+.abcos p{
+	padding: 0px 30px;
+	color: black;
+}
+.abcos button{
+	border-radius: 100px;
+	padding: 12px 25px;
+	font-family: 'Merriweather', serif;
+	background: #386fba;
+	font-size: 12px;
+	text-transform: uppercase;
+	border: none;
+	letter-spacing: 1px;
+	color: black;
+}
+.abcos button:hover{
+	border: 1px solid white;
+	color: white;
+	transition: 0.5s;
+}
+hr{
+	width: 100%;
+	background-color: black;
+	height: 2px;
+}
+.img1 button{
+    border-radius: 100px;
+	padding: 12px 25px;
+	font-family: 'Merriweather', serif;
+	background: black;
+	font-size: 12px;
+	text-transform: uppercase;
+	border: none;
+	letter-spacing: 1px;
+	color: white;
+}
+/*.img1 button:hover{
+    border: 1px solid white;
+	color: white;
+	transition: 0.5s;
+}*/
+.img1 h1{
+    font-family: 'Merriweather', serif;
+}
+.img1 p{
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+.contentlogin {
+    background: url('images/login3.jpg');
+    padding: 30px 100px;
+	margin-top: 0px;
+	border: 0;
+	display: block;
+	min-height: 600px;
+    font-family: 'Merriweather', serif;
+    color: black;
+}
+.contentlogin h1{
+    font-family: 'Merriweather',serif;
+	font-weight: 700;
+	font-size: 30px;
+}
+.contentregister {
+    background: url('images/login3.jpg');
+    padding: 30px 100px;
+	margin-top: 0px;
+	border: 0;
+	display: block;
+	min-height: 600px;
+    font-family: 'Merriweather', serif;
+    color: black;
+}
+.contentregister h1{
+    font-family: 'Merriweather',serif;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+

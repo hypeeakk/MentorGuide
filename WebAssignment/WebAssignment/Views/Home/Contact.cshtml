@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+      integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+      crossorigin="" />
+<style>
+    #map {
+        height: 400px;
+        width: 800px;
+    }
+</style>
+
+<div class="hero3 text-center">
+    <h1 class="animated bounceInDown">Contact</h1>
+</div>
+<div class="contact">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h1>Say hello</h1>
+            <p style="font-size: 20px">
+                If you need a tutor, please contact us and tell me what you want to learn, what type of tutor is needed, and where and how easy you can learn. We live near you and find a mentor who is passionate about teaching you.
+            </p>
+            <div id="map"></div>
+            <h4>Email: MentorGuide@gmail.com</h4>
+            <h4>Ph no: 015-120-0990 </h4>
+            <h4>Address: No.92, Pha Yar St, Yangon, Myanmar</h4>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+        integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+        crossorigin=""></script>
+<script>
+
+    var ny = [16.821982, 96.121189]
+    // création de la map
+    var map = L.map('map').setView(ny, 12);
+
+    // création du calque images
+    L.tileLayer('https://maps.heigit.org/openmapsurfer/tiles/roads/webmercator/{z}/{x}/{y}.png', {
+        maxZoom: 20
+    }).addTo(map);
+
+    // ajout d'un markeur
+    var marker = L.marker(ny).addTo(map);
+
+    // ajout d'un popup
+    marker.bindPopup('<h3> Pha Yar St, Myanmar. </h3>');
+</script>
