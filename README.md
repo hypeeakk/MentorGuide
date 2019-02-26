@@ -7,6 +7,6 @@
 * And clean and build project
 * After that, please run Index page from home controller. 
 
-#Software Version
+# Software Version
 * Visual studio 2013
 * SQL server management 2014
